@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 int main(){
-	int number, first_num,second_num,third_num,fourth_num, reversed;
+	int number, first_num,second_num,third_num,fourth_num, total;
 	printf("moi nhap so nguyen co 4 chu so: ");
 	scanf("%d", &number);
 first_num=number/1000;
@@ -12,9 +12,9 @@ third_num=number/10%10;
 
 fourth_num=number%10;
 
-reversed= fourth_num*1000+third_num*100+second_num*10+first_num;
+total= first_num+second_num+third_num+fourth_num;
 
-printf("so nghich dao la la: %d",reversed);
+printf("tong cac chu so la: %d",total);
 
    return 0;
 }
